@@ -13,7 +13,21 @@
 <body>
 <h1>You've just deployed a site using <a href="http://juju.ubuntu.com">Juju!</a></h1>
 <p>If you see this page then the website charm has been successfully deployed! You should change the </code>content</code> configuration option to point to a git repo, bazaar branch, or archive to have the contents updated.</p>
-<p>Include screenshots and better webpage layout</p>
+
+<h2>Updating this webpage</h2
+
+<p>Once the website service has been deployed and connected to either NGINX or Apache2, then you can update this page by using one of the two metods below:</p>
+<h3>Using the GUI</h3>
+
+<p>In the Juju GUI: click on the website service on the canvas, select the wrench icon in the inspector, change the "content" option to a new repository, select the "Save Changes" button at the bottom.</p>
+
+<img src="/gui.png">
+
+<h3>From the command line</h3>
+
+<p>Run the following command from the command-line, replacing <code>https://github.com/marcoceppi/famous-demo.git</code> with the repository of your choice.</p>
+
+<pre><code>juju set website content="https://github.com/marcoceppi/famous-demo.git"</code></pre>
 
 <p><em>Thank you for using Juju.</em></p>
 </body>
